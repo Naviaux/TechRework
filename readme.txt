@@ -8,6 +8,10 @@ This tree doesn't technically override the technician tree it simply replaces th
 As a result of this, you will need to respec the technician tree before using this mod
 
 Changelog:
+2.0 ----
+Percussion Maintenance:
+    Basic: 25% chance upon melee kill to get 10% of total ammo back
+More advanced localization
 1.5 -----
 Percussion Maintenance:
     Basic: Not implemented

@@ -163,7 +163,6 @@ function SkillTreeTweakData:init(tweak_data)
 		[1] = {
 			upgrades = {
 				"player_silent_kill"
-			--	"custom_interaction_speed"
 			},
 			cost = self.costs.default
 		},
@@ -311,7 +310,8 @@ function SkillTreeTweakData:init(tweak_data)
 		["icon_xy"] = {1, 7},
 		[1] = {
 			upgrades = {
-				"player_silent_kill"
+				"player_melee_ammo_replenish_chance",
+				"player_melee_ammo_replenish"
 			},
 			cost = self.costs.hightier
 		},

@@ -3,12 +3,32 @@ function UpgradesTweakData:init(tweak_data)
 	data(self, tweak_data)
 	
 	self.values.player.percussive_maintenance = {0.35}
+	self.values.player.melee_ammo_replenish_chance = {0.25}
+	self.values.player.melee_ammo_replenish = {0.1}
 	self.definitions.player_percussive_maintenance = {
 		category = "feature",
 		name_id = "percussive_maintenance",
 		upgrade = {
 			category = "player",
 			upgrade = "percussive_maintenance",
+			value = 1
+		}
+	}
+	self.definitions.player_melee_ammo_replenish_chance = {
+		category = "feature",
+		name_id = "replenish_chance",
+		upgrade = {
+			category = "player",
+			upgrade = "melee_ammo_replenish_chance",
+			value = 1
+		}
+	}
+	self.definitions.player_melee_ammo_replenish = {
+		category = "feature",
+		name_id = "replenish_amount",
+		upgrade = {
+			category = "player",
+			upgrade = "melee_ammo_replenish",
 			value = 1
 		}
 	}
