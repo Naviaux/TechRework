@@ -102,7 +102,7 @@ function UpgradesTweakData:init(tweak_data)
 		}
 	}]]
 	self.definitions.team_drop_reload = {
-		category = "feature",
+		category = "team",
 		name_id = "drop_reload_buff",
 		upgrade = {
 			category = "weapon",

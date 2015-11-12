@@ -8,6 +8,9 @@ This tree doesn't technically override the technician tree it simply replaces th
 As a result of this, you will need to respec the technician tree before using this mod
 
 Changelog:
+3.1 ----
+Drop Reloading:
+	Aced: Teammates will now get the reloading buff if they have the mod installed
 3.0 ----
 Rifleman:
 	Basic: 100% ADS Speed for Assault Rifles

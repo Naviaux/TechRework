@@ -3,11 +3,11 @@
 	"description"	:	"A relatively simple rework",
 	"author"	:	"Naviaux",
 	"contact"	:	"/u/Naviaux-",
-	"version"	:	"3.0",
+	"version"	:	"3.1",
 	"priority"	:	"0",
 	"updates"	:	[
 		{
-			"revision"	:	4,
+			"revision"	:	5,
 			"identifier"	:	"techrework"
 		}
 	],
