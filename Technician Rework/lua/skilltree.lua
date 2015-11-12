@@ -22,20 +22,20 @@ function SkillTreeTweakData:init(tweak_data)
 		[6] = { upgrades = {}, desc_id = "t_tier6" }
 	}
 	
-	-- TIER 1	 [ UNKNOWN ]	LEFT --
+	-- TIER 1	 [ RIFLEMAN ]	LEFT --
 	self.skills.t_left1 = {
 		["name_id"] = "t_left1",
 		["desc_id"] = "t_left1_desc",
-		["icon_xy"] = {0, 0},
+		["icon_xy"] = {0, 5},
 		[1] = {
 			upgrades = {
-				"player_silent_kill"
+				"assault_rifle_enter_steelsight_speed_multiplier"
 			},
 			cost = self.costs.default
 		},
 		[2] = {
 			upgrades = {
-				"player_silent_kill"
+				"ar_acc_increase_1"
 			},
 			cost = self.costs.pro
 		}
@@ -77,20 +77,20 @@ function SkillTreeTweakData:init(tweak_data)
 			cost = self.costs.pro
 		}
 	}
-	-- TIER 2	 [ UNKNOWN ]	LEFT --
+	-- TIER 2	 [ SHARPSHOOTER ]	LEFT --
 	self.skills.t_left2 = {
 		["name_id"] = "t_left2",
 		["desc_id"] = "t_left2_desc",
-		["icon_xy"] = {0, 0},
+		["icon_xy"] = {6, 5},
 		[1] = {
 			upgrades = {
-				"player_silent_kill"
+				"assault_rifle_recoil_index_addend"
 			},
 			cost = self.costs.default
 		},
 		[2] = {
 			upgrades = {
-				"player_silent_kill"
+				"ar_acc_increase_2"
 			},
 			cost = self.costs.pro
 		}
@@ -162,7 +162,7 @@ function SkillTreeTweakData:init(tweak_data)
 		["icon_xy"] = {7, 6},
 		[1] = {
 			upgrades = {
-				"player_silent_kill"
+				"player_interaction_speed"
 			},
 			cost = self.costs.default
 		},
@@ -252,10 +252,11 @@ function SkillTreeTweakData:init(tweak_data)
 		["name_id"] = "t_left5",
 		["desc_id"] = "t_left5_desc",
 		["icon_xy"] = {7, 6},
-		["prerequisites"] = {"t_left4"},
+		["prerequisites"] = {"t_left3"},
 		[1] = {
 			upgrades = {
-				"sentry_gun_quantity_increase"
+				"sentry_gun_quantity_increase",
+				"sentry_gun_can_revive"
 			},
 			cost = self.costs.hightier
 		},
@@ -329,16 +330,13 @@ function SkillTreeTweakData:init(tweak_data)
 		["icon_xy"] = {0, 5},
 		[1] = {
 			upgrades = {
-				"player_silent_kill"
-			--	"player_dropreload_1"
+				"weapon_drop_reload_1"
 			},
 			cost = self.costs.hightier
 		},
 		[2] = {
 			upgrades = {
-				"player_silent_kill"
-			--	"player_dropreload_2",
-			--	"player_team_dropreload"
+				"team_drop_reload"
 			},
 			cost = self.costs.hightierpro
 		}
